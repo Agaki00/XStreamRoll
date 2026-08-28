@@ -14,10 +14,10 @@
   ],
   "scripts": {
     "prepare": "echo 'husky disabled'",
-    "dev": "concurrently \"npm run dev:app\" \"npm run dev:api\"",
+    "dev": "node api.js && concurrently \"npm run dev:app\" \"npm run dev:api\"",
     "dev:app": "cd app && npm run dev",
     "dev:api": "cd api && npm run dev",
-    "build": "npm run build:types && npm run build:contracts && npm run build:app && npm run build:api",
+    "build": "node api.js && npm run build:types && npm run build:contracts && npm run build:app && npm run build:api",
     "build:types": "cd packages/types && npm run build",
     "build:contracts": "cd tests/contracts && npm run build",
     "build:app": "cd app && npm run build",

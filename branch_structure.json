@@ -1,0 +1,21 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "frioh",
+    "issue-525-dead-letter",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "frioh": "main",
+    "issue-525-dead-letter": "main",
+    "main": null,
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "frioh",
+    "issue-525-dead-letter",
+    "origin"
+  ]
+}
